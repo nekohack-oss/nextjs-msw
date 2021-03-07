@@ -13,6 +13,7 @@
     "test:w": "npm run test-cover -- --watch"
   },
   "dependencies": {
+    "msw": "^0.27.0",
     "next": "9.5.5",
     "react": "16.13.1",
     "react-dom": "16.13.1"

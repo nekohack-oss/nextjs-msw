@@ -3,6 +3,10 @@ import Head from 'next/head'
 
 import '../static/globals.css'
 
+if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
+    require('../.mocks')
+}
+
 const MyApp = ({ Component, pageProps }) => {
     return (
         <>
