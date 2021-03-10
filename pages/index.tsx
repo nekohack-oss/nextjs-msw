@@ -3,6 +3,7 @@ import { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import styles from '../static/Home.module.css'
 import { Source } from '../types/source'
+import { ClientCard } from '../components/ClientCard'
 
 type Props = { data: Source }
 
@@ -17,6 +18,7 @@ export default function Home(props: Props) {
             <main className={styles.main}>
                 <h1>{props.data.title}</h1>
                 <p>{props.data.text}</p>
+                <ClientCard />
             </main>
 
             <footer className={styles.footer}>
